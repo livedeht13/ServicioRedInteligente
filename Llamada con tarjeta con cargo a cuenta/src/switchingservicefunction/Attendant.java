@@ -53,7 +53,6 @@ public class Attendant extends Thread {
 			timer.cancel();
 			incommingUser.getSender().setHostAddress(
 					client.getInetAddress().getHostAddress());
-			ListIterator<Usuario> usrs = Boss.getUsuarios().listIterator();
 			ObjectOutputStream salida = new ObjectOutputStream(
 					client.getOutputStream());
 			DataChunk chunk = new DataChunk();
