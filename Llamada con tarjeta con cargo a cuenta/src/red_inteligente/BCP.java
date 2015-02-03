@@ -64,5 +64,25 @@ public class BCP {
     }
     scf.POR(2);
     // ESTABLECER LLAMADA*/
+    
+    //Proceso de señaización y establecimiento de llamada
+    int costo = 0;
+    //Ciclo de llamada
+    costo = scf.tarificar(); // Iniciar;
+    while(llamada() == true){
+        //Llamada en curso        
     }
+    
+    //Tarificar termina
+    //Señalización Liberar llamada
+    // CONTINUA HILO;
+    }
+    
+    
+    public boolean llamada(){
+        boolean activo = true;
+        return false;    
+    }
+    
+    
 }

@@ -11,12 +11,16 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.sound.sampled.*;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
+
 /**
  *
  * @author Alfonso
  */
-public class SRF {
+public class INTERACCION {
     
     public void inter_user_sol(int op) {
         InputStream path; 
@@ -126,7 +130,7 @@ public class SRF {
             } catch (UnsupportedAudioFileException ex) {
                 Logger.getLogger(SRF.class.getName()).log(Level.SEVERE, null, ex);
             }
-            numerodes = "12245";
+            numerodes = "12345";
         }
         if(op == 2){
             //Ingresa numero
@@ -171,4 +175,7 @@ public class SRF {
             //Iniciar llamada
         }
     }
+    
+    
+    
 }

@@ -21,15 +21,15 @@ public class SCF {
             return false;
     }
     
+    int costo = 0;
+    int tiempo = 0;
+    int precio_serv = 0;
+        
     public int tarificar(){
-        int costo = 0;
-        int tiempo = 0;
-        int precio_serv = 0;
-            //Hilo 
+        //Hilo 
         costo = tiempo * precio_serv;
         return costo;
     }
-    
     public void POR(int op){
         if(op == 1)
         {
